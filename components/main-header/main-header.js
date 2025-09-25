@@ -2,7 +2,10 @@ import Link from "next/link"
 import imageLogo from "@/assets/logo.png"
 import classes from "./main-header.module.css"
 import MainHeaderBackground from "./main-headerBackground";
+import NavLink from "./nav-link";
+
 function MainHeader ({childern}){
+
     return(
         <header className={classes.header}> 
 
@@ -14,8 +17,8 @@ function MainHeader ({childern}){
 
             <nav className={classes.nav}>
                 <ul>
-                    <li><Link href={'/meals'}>Meals</Link></li>
-                    <li><Link href={'/community'}>Community</Link></li>
+                    <li><NavLink href={'/meals'}>Meals</NavLink></li>
+                    <li><NavLink href={'/community'}>Community</NavLink></li>
                 </ul>
             </nav>
         </header>
